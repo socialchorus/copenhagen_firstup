@@ -3,17 +3,137 @@
 <section id="main-content" class="section hero">
   <div class="hero-inner">
     <h2 class="visibility-hidden">{{ t 'search' }}</h2>
-    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" focusable="false" viewBox="0 0 12 12" class="search-icon" aria-hidden="true">
+    <!--ANGELA FREY INSERTING HEADER TEXT -->
+      <!--<p>Classic Studio is Still Documented at <a href='https://howto.socialchorus.com/hc/en-us'>howto.socialchorus.com</a></p>-->
+      <h1>Firstup Help Center</h1>
+    <!-- END INSERTED TEXT -->
+    <!--<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" focusable="false" viewBox="0 0 12 12" class="search-icon" aria-hidden="true">
       <circle cx="4.5" cy="4.5" r="4" fill="none" stroke="currentColor"/>
       <path stroke="currentColor" stroke-linecap="round" d="M11 11L7.5 7.5"/>
-    </svg>
-    {{search submit=false instant=settings.instant_search class='search search-full'}}
+    </svg>-->
+
+<!--ANGELA FREY SWAP OUT THIS ORIGINAL SEARCH -->
+<!-- search submit=false instant=settings.instant_search class='search search-full'-->
+<!--WITH THIS CUSTOM SEARCH-->
+  {{search submit=false instant=true class='search search-full' placeholder='Search the Knowledge Base...'}}
+
   </div>
 </section>
+
+<!-- KB Switcher -->
+<section class="switcher-banner">
+  <div class="container">
+    <ul class="blocks-list">
+
+      <li class="blocks-item no-link">
+          <h3 class="blocks-item-title">Looking for another product?</h3>
+          <p>Use our Knowledge Base switcher</p>
+      </li>
+
+      <li class="blocks-item">
+        <a href="https://howto.socialchorus.com" class="switcher-item-link">
+          <div class="upgrade-icon"><img src="{{asset 'firstup.svg'}}"></div>
+          <div class="upgrade-link">
+            <h3>Classic Studio</h3>
+            <p>Knowledge Base</p>
+          </div>
+        </a>
+      </li>
+
+      <li class="blocks-item">
+        <a href="https://support.dynamicsignal.com/" class="switcher-item-link">
+          <div class="upgrade-icon"><img src="{{asset 'dysi.svg'}}"></div>
+          <div class="upgrade-link">
+            <h3>Dynamic Platform</h3>
+            <p>Knowledge Base</p>
+          </div>
+        </a>
+      </li>
+
+    </ul>
+  </div>
+</section>
+
+<!-- Upgrade Block -->
+<section class="upgrade-banner">
+  <div class="container">
+    <ul class="blocks-list">
+
+      <li class="blocks-item">
+        <a href="https://training.firstup.io" class="upgrade-item-link">
+          <div class="upgrade-icon"><img src="{{asset 'mortarboard.svg'}}"></div>
+          <div class="upgrade-link">
+            <h3>Training Center</h3>
+            <p>Learn through self-guided eLearning courses</p>
+          </div>
+        </a>
+      </li>
+
+      <li class="blocks-item">
+        <a href="https://library.firstup.io" class="upgrade-item-link">
+          <div class="upgrade-icon"><img src="{{asset 'openbook.svg'}}"></div>
+          <div class="upgrade-link">
+            <h3>EX Content Library</h3>
+            <p>Browse our 125+ comms templates to personalize your employee journeys</p>
+          </div>
+        </a>
+      </li>
+
+      <li class="blocks-item">
+        <a href="https://partner.socialchorus.com" class="upgrade-item-link">
+          <div class="upgrade-icon"><img src="{{asset 'api.svg'}}"></div>
+          <div class="upgrade-link">
+            <h3>Developer Portal</h3>
+            <p>Dive into our Partner API using our developer documentation</p>
+          </div>
+        </a>
+      </li>
+
+      <li class="blocks-item">
+        <a href="https://advocate.socialchorus.com/community/community/welcome" class="upgrade-item-link">
+          <div class="upgrade-icon"><img src="{{asset 'chat.svg'}}"></div>
+          <div class="upgrade-link">
+            <h3>COMMunity</h3>
+            <p>Connect with other customers in COMMunity</p>
+          </div>
+        </a>
+      </li>
+
+    </ul>
+  </div>
+</section>
+
+<!-- Feature section Guidebook November 2021 ANGELA FREY
+<section class="feature-banner">
+  <div class="container">
+    <div class="intro-text">
+           <b>Upgrade Guidebook Available!</b>
+      <p>Start here with a visual guide to the biggest changes to content creation and engagement.</p>
+    </div>
+    <div class="intro-content">
+      <a href="https://support.onfirstup.com/hc/en-us/articles/4413295063191" class="button"> DOWNLOAD UPGRADE GUIDEBOOK →	</a>
+    </div>
+    </div>
+</section>-->
+
+<!-- Feature section Placeholder --
+<section class="feature-banner">
+  <div class="container">
+    <div class="intro-text">
+      <h2>Brand new to firstup?</h2>
+      <p>Start here with a 10 minute overview of the platform!</p>
+    </div>
+    <div class="intro-content">
+      <!-- Wistia Video FPO --
+      <script src="https://fast.wistia.com/embed/medias/n4g9f5crdw.jsonp" async></script><script src="https://fast.wistia.com/assets/external/E-v1.js" async></script><div class="wistia_responsive_padding" style="padding:56.25% 0 0 0;position:relative;"><div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;"><div class="wistia_embed wistia_async_n4g9f5crdw videoFoam=true" style="height:100%;position:relative;width:100%"><div class="wistia_swatch" style="height:100%;left:0;opacity:0;overflow:hidden;position:absolute;top:0;transition:opacity 200ms;width:100%;"><img src="https://fast.wistia.com/embed/medias/n4g9f5crdw/swatch" style="filter:blur(5px);height:100%;object-fit:contain;width:100%;" alt="" aria-hidden="true" onload="this.parentNode.style.opacity=1;" /></div></div></div></div>
+    </div>
+  </div>
+</section>-->
 
 <div class="container">
   <section class="section knowledge-base">
     <h2 class="visibility-hidden">{{ t 'categories' }}</h2>
+    <h2 style="text-align: center;">Explore the Knowledge Base</h2>
     <section class="categories blocks">
       <ul class="blocks-list">
         {{#each categories}}

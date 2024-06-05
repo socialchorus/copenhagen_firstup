@@ -1,5 +1,9 @@
 <a class="skip-navigation" tabindex="1" href="#main-content">{{t 'skip_navigation' }}</a>
-
+<div class="status-wrapper">
+    <div class="container">
+      <div id="status-message"><a href="https://status.firstup.io" target="_blank"><span class="status-dot none"></span>Platform Status</a></div>
+    </div>
+  </div>
 <header class="header">
   <div class="logo">
     {{#link 'help_center'}}
@@ -16,8 +20,11 @@
       </svg>
     </button>
     <nav class="user-nav" id="user-nav">
+      <a class="hc_button" href="https://howto.socialchorus.com">Classic Studio</a>
+      <a class="hc_button" href="https://support.dynamicsignal.com/">Dynamic Platform</a>
       {{link 'community'}}
-      {{link 'new_request' class='submit-a-request'}}
+      <!--{{link 'new_request' class='submit-a-request'}}-->
+      <a class="submit-a-request solvvy-support-flow-link" onclick="openZVA()" style="cursor: pointer;">Submit a request</a>
     </nav>
     {{#if signed_in}}
       <div class="user-info dropdown">
@@ -45,3 +52,9 @@
     {{/if}}
   </div>
 </header>
+<!-- Script for ZVA open chat -->
+<script>
+ function openZVA(){
+            window.zoomCampaignSdk.open();
+            return false;}
+</script>
